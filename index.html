@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rudransh Infotech Services | Premium IT & Data Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Running Announcement Banner -->
+    <div class="announcement-bar">
+        <div class="scrolling-text">
+            <span>🚀 We currently provide services across 🇮🇳 India. Please email us your details. Our team will
+                respond within 24 hours. ✉️</span>
+            <!-- Duplicate for seamless loop -->
+            <span>🚀 We currently provide services across 🇮🇳 India. Please email us your details. Our team will
+                respond within 24 hours. ✉️</span>
+        </div>
+    </div>
+
+    <div class="glass-background"></div>
+
+    <nav>
+        <div class="logo">Rudransh Infotech</div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#payment">Payment</a>
+            <a href="#contact" class="btn-contact">Contact Us</a>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Complete IT & Software Solutions</h1>
+            <p>From Data Recovery to AI Tools, we solve every digital problem.</p>
+            <p class="sub-hero">Save money. Learn self-repair. Get genuine guides.</p>
+            <a href="#services" class="btn-primary">Explore Services</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="about-container">
+            <h2>Why Choose Rudransh Infotech?</h2>
+            <div class="about-text-box">
+                <p>We provide comprehensive software solutions for both <strong>Computers and Mobiles</strong>. All
+                    services are premium and include <strong>genuine step-by-step guides</strong>.</p>
+                <div class="features">
+                    <div class="feature-item">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <span><strong>We Teach You:</strong> After our service, we guide you on common technical issues
+                            so you can resolve them yourself in the future.</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-piggy-bank"></i>
+                        <span><strong>Save Money:</strong> You will never need to wait for a technician repeatedly. We
+                            empower you.</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-laptop-medical"></i>
+                        <span><strong>Expert Solutions:</strong> From complex data recovery to simple software
+                            installation, we handle it all.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Service Inquiry -->
+    <div id="inquiryModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h3 id="modalTitle">Service Inquiry</h3>
+            <p>Fill out this form and we will call you shortly.</p>
+            <form id="inquiryForm">
+                <input type="hidden" id="serviceNameInput" name="service">
+                <div class="form-group">
+                    <label>Your Name</label>
+                    <input type="text" id="userName" required placeholder="Enter your full name">
+                </div>
+                <div class="form-group">
+                    <label>Phone Number</label>
+                    <input type="tel" id="userPhone" required placeholder="Enter your mobile number">
+                </div>
+                <div class="form-group">
+                    <label>Email (Optional)</label>
+                    <input type="email" id="userEmail" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea id="userMessage" rows="3" placeholder="Describe your issue..."></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Request Call Back (Email)</button>
+            </form>
+        </div>
+    </div>
+
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <p class="section-desc">Click on any service card to request a callback or details.</p>
+
+        <!-- Dynamic Content Container -->
+        <div id="services-container">
+            <!-- Services will be loaded here from data.js -->
+            <p style="text-align:center; color: #888;">Loading services...</p>
+        </div>
+
+    </section>
+
+    <section id="payment" class="payment">
+        <h2>Payment</h2>
+        <div class="qr-container">
+            <h3>Scan to Pay</h3>
+            <img src="payment_qr.jpg" alt="Payment QR Code" class="qr-code">
+            <p class="crypto-text">Accepted: UPI, PhonePe, Paytm, GPay</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-box">
+            <div class="contact-info">
+                <div class="item">
+                    <i class="fas fa-envelope"></i>
+                    <p><strong>Email:</strong> Ruranshinfotechservices@gmail.com</p>
+                </div>
+                <div class="item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p><strong>Service Area:</strong> Global (Online)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Rudransh Infotech Services. All rights reserved.</p>
+    </footer>
+
+    <!-- AI Chat Widget - Build Trigger: 24/7 Active -->
+    <div id="ai-chat-widget" class="chat-widget">
+        <div class="chat-greeting">Hi! Need Help? 👋</div>
+        <div class="chat-button" onclick="toggleChat()">
+            <i class="fas fa-robot"></i>
+        </div>
+        <div class="chat-window" id="chat-window">
+            <div class="chat-header">
+                <div class="header-info">
+                    <i class="fas fa-robot"></i>
+                    <div>
+                        <h4>Rudransh AI</h4>
+                        <span class="status">Online</span>
+                    </div>
+                </div>
+                <span class="close-chat" onclick="toggleChat()">&times;</span>
+            </div>
+            <div class="chat-body" id="chat-body">
+                <!-- Messages will appear here -->
+                <div class="msg bot-msg">
+                    <p>Namaste! 🙏 I am Rudransh AI. How can I help you regarding our services today?</p>
+                </div>
+            </div>
+            <div class="chat-footer">
+                <input type="text" id="chat-input" placeholder="Type your message..."
+                    onkeypress="handleChatInput(event)">
+                <button onclick="sendMessage()"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
